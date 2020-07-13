@@ -5,6 +5,7 @@ import Signin from './containers/Signin/Signin';
 import Signup from './containers/Signup/Signup';
 import Main from './containers/Main/Main';
 import Visitor from './containers/Visitor/Visitor';
+import UserInfo from './containers/UserInfo/UserInfo';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/signup' exact component={Signup} />
                 <Route path='/main' exact component={Main} />
                 <Route path='/visitor' exact component={Visitor} />
+                <Route path="/user" exact component={UserInfo} />
                 <Route path='/' exact render={() => <p>Welcome!</p>} />
                 <Route path='/' render={() => <p>Error: Page not found!</p>} />
             </Switch>
