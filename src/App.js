@@ -17,7 +17,7 @@ function App() {
                 <Route path='/signup' exact component={Signup} />
                 <Route path='/main' exact component={Main} />
                 <Route path='/visitor' exact component={Visitor} />
-                <Route path="/user" exact component={UserInfo} />
+                <Route path='/user' exact component={UserInfo} />
                 <Route path='/' exact render={() => <p>Welcome!</p>} />
                 <Route path='/' render={() => <p>Error: Page not found!</p>} />
             </Switch>
