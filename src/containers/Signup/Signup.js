@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@fengzechen0615 
-htkz
-/
-TicketHub
-1
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-TicketHub/src/containers/Signup/Signup.js /
-@wangyq1996
-wangyq1996 signup update
-Latest commit ed35104 10 minutes ago
- History
- 2 contributors
-@wangyq1996@htkz
-358 lines (328 sloc)  11.8 KB
-
-
 import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -389,15 +356,3 @@ export default function SignInSide() {
         </Grid>
     );
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
