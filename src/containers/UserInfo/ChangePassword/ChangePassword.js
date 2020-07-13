@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         display: 'block',
         flewWrap: 'wrap',
-        width: 'max',
     },
     margin: {
         margin: theme.spacing(1),
@@ -31,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
     },
     passwordInput: {
         width: '400px',
+    },
+    center: {
+        display: 'flex',
+        justifyContent: 'center',
     },
 }));
 
@@ -58,7 +61,7 @@ const ChangePassword = (props) => {
     return (
         <div className={classes.root}>
             <div>
-                <div>
+                <div className={classes.center}>
                     <FormControl
                         className={clsx(
                             classes.margin,
@@ -93,7 +96,7 @@ const ChangePassword = (props) => {
                         />
                     </FormControl>
                 </div>
-                <div>
+                <div className={classes.center}>
                     <FormControl
                         className={clsx(
                             classes.margin,
@@ -128,7 +131,7 @@ const ChangePassword = (props) => {
                         />
                     </FormControl>
                 </div>
-                <div>
+                <div className={classes.center}>
                     <FormControl
                         className={clsx(
                             classes.margin,
@@ -164,9 +167,11 @@ const ChangePassword = (props) => {
                     </FormControl>
                 </div>
             </div>
-            <Button variant='contained' color='primary' disabled>
-                Change Password
-            </Button>
+            <div className={classes.center}>
+                <Button variant='contained' color='primary' disabled>
+                    Change Password
+                </Button>
+            </div>
         </div>
     );
 };

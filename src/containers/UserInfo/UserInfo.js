@@ -51,6 +51,10 @@ const useStyles = makeStyles((theme) => ({
     tabs: {
         borderRight: `1px solid ${theme.palette.divider}`,
         margin: '15px',
+        width: '35%',
+    },
+    tabPanle: {
+        width: '100%',
     },
 }));
 
@@ -83,7 +87,7 @@ function UserInfo() {
                     <Tab label='Payment Information' {...a11yProps(4)} />
                     <Tab label='Friends Information' {...a11yProps(5)} />
                 </Tabs>
-                <TabPanel value={value} index={0}>
+                <TabPanel value={value} index={0} className={classes.tabPanle}>
                     <ChangePassword />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
