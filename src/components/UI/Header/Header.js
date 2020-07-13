@@ -20,25 +20,25 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const header = (props) => {
+const Header = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <AppBar position='static' color='transparent'>
+            <AppBar position="static" color="transparent">
                 <Toolbar>
-                    <Typography variant='h6' className={classes.title}>
+                    <Typography variant="h6" className={classes.title}>
                         TicketHub
                     </Typography>
                     <div>
                         <Typography
-                            variant='button'
+                            variant="button"
                             className={classes.userName}
                         >
                             Htkz
                         </Typography>
-                        <Button color='inherit'>Profile</Button>
-                        <Button color='inherit'>My Account</Button>
-                        <Button color='inherit'>Logout</Button>
+                        <Button color="inherit">Profile</Button>
+                        <Button color="inherit">My Account</Button>
+                        <Button color="inherit">Logout</Button>
                     </div>
                 </Toolbar>
             </AppBar>
@@ -46,4 +46,4 @@ const header = (props) => {
     );
 };
 
-export default header;
+export default Header;
