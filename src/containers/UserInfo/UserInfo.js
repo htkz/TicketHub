@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import ChangePassword from '../../components/UserInfo/ChangePassword/ChangePassword';
-import Header from '../../components/UI/Header/Header';
+import ChangePassword from './UserInfo/ChangePassword/ChangePassword';
+import Header from '../../components/Header/Header';
 
 class UserInfo extends Component {
     render() {
