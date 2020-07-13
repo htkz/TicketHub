@@ -19,7 +19,6 @@ const FilterBar = () => {
     const classes = useStyles();
     return (
         <div className={classes.Container}>
-            <span>Filter by: </span>
             <Button variant='outlined' size='medium' className={classes.margin}>
                 Latest
             </Button>
@@ -30,14 +29,6 @@ const FilterBar = () => {
                 Reset
             </Button>
             <SearchBar />
-            {/* <TextField
-                variant='outlined'
-                size='small'
-                className={classes.margin}
-            />
-            <Button variant='outlined' size='small' className={classes.margin}>
-                Search
-            </Button> */}
         </div>
     );
 };

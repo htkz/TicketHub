@@ -56,7 +56,6 @@ export default function PrimarySearchAppBar() {
             <AppBar
                 position='static'
                 color='transparent'
-                boxShadow={0}
                 className={classes.flat}
             >
                 <div className={classes.search}>
