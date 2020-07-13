@@ -13,7 +13,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Copyright from '../../components/UI/Copyright/Copyright';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
@@ -51,7 +50,7 @@ export default function SignInSide() {
     const classes = useStyles();
 
     return (
-        <Grid container component='main' className={classes.root}>
+        <Grid container component="main" className={classes.root}>
             <Grid item xs={false} sm={4} md={7} className={classes.image} />
             <Grid
                 item
@@ -66,66 +65,66 @@ export default function SignInSide() {
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />
                     </Avatar>
-                    <Typography component='h1' variant='h5'>
+                    <Typography component="h1" variant="h5">
                         Sign up
                     </Typography>
                     <form className={classes.form} noValidate>
                         <TextField
-                            variant='outlined'
-                            margin='normal'
+                            variant="outlined"
+                            margin="normal"
                             required
                             fullWidth
-                            id='email'
-                            label='Email Address'
-                            name='email'
-                            autoComplete='Your Email'
+                            id="email"
+                            label="Email Address"
+                            name="email"
+                            autoComplete="Your Email"
                             autoFocus
                         />
                         <TextField
-                            variant='outlined'
-                            margin='normal'
+                            variant="outlined"
+                            margin="normal"
                             required
                             fullWidth
-                            id='username'
-                            label='Username'
-                            name='username'
-                            autoComplete='Your Username'
+                            id="username"
+                            label="Username"
+                            name="username"
+                            autoComplete="Your Username"
                         />
                         <TextField
-                            variant='outlined'
-                            margin='normal'
+                            variant="outlined"
+                            margin="normal"
                             required
                             fullWidth
-                            id='password'
-                            label='Password'
-                            name='password'
-                            autoComplete='Your Password'
+                            id="password"
+                            label="Password"
+                            name="password"
+                            autoComplete="Your Password"
                         />
                         <TextField
-                            variant='outlined'
-                            margin='normal'
+                            variant="outlined"
+                            margin="normal"
                             required
                             disabled
                             fullWidth
-                            name='re-enter_password'
-                            label='Re-enter Password'
-                            type='password'
-                            id='re-enter_password'
-                            autoComplete='Re-enter Your Password'
+                            name="re-enter_password"
+                            label="Re-enter Password"
+                            type="password"
+                            id="re-enter_password"
+                            autoComplete="Re-enter Your Password"
                         />
                         <Button
-                            type='submit'
+                            type="submit"
                             fullWidth
-                            variant='contained'
-                            color='primary'
+                            variant="contained"
+                            color="primary"
                             className={classes.submit}
                         >
                             Sign Up
                         </Button>
-                        <Grid container justify='center'>
+                        <Grid container justify="center">
                             <Grid item>
-                                <Link href='/signin' variant='body2'>
-                                    {"Already have a account? Sign In"}
+                                <Link href="/signin" variant="body2">
+                                    {'Already have a account? Sign In'}
                                 </Link>
                             </Grid>
                         </Grid>
