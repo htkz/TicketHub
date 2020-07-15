@@ -7,7 +7,8 @@ import SearchIcon from '@material-ui/icons/Search';
 const useStyles = makeStyles((theme) => ({
     container: {
         display: 'inline-block',
-        margin: theme.spacing(0, 1),
+        margin: theme.spacing(0),
+        width: '97%',
     },
     search: {
         position: 'relative',
