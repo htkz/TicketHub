@@ -70,7 +70,7 @@ function UserInfo() {
     return (
         <React.Fragment>
             <div>
-                <Header />
+                <Header isUser />
             </div>
             <div className={classes.root}>
                 <Tabs
