@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ChangePassword from './ChangePassword/ChangePassword';
+import PersonalInfo from './PersonalInfo/PersonalInfo';
 import Header from '../../components/Header/Header';
 
 import { makeStyles, Tabs, Tab, Typography, Box } from '@material-ui/core';
@@ -19,7 +20,7 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box p={3}>
-                    <Typography>{children}</Typography>
+                    <Typography component={'span'}>{children}</Typography>
                 </Box>
             )}
         </div>
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         display: 'flex',
         width: '60%',
-        height: '800px',
+        height: 'maxHeight',
         margin: '10px auto',
     },
     tabs: {
@@ -84,22 +85,21 @@ function UserInfo() {
                     <Tab label='Change Password' {...a11yProps(1)} />
                     <Tab label='Ticket Information' {...a11yProps(2)} />
                     <Tab label='Payment Infomantion' {...a11yProps(3)} />
-                    <Tab label='Payment Information' {...a11yProps(4)} />
-                    <Tab label='Friends Information' {...a11yProps(5)} />
+                    <Tab label='Friends Information' {...a11yProps(4)} />
                 </Tabs>
                 <TabPanel value={value} index={0} className={classes.tabPanle}>
+                    <PersonalInfo />
+                </TabPanel>
+                <TabPanel value={value} index={1} className={classes.tabPanle}>
                     <ChangePassword />
                 </TabPanel>
-                <TabPanel value={value} index={1}>
-                    <ChangePassword />
-                </TabPanel>
-                <TabPanel value={value} index={2}>
+                <TabPanel value={value} index={2} className={classes.tabPanle}>
                     Item Three
                 </TabPanel>
-                <TabPanel value={value} index={3}>
+                <TabPanel value={value} index={3} className={classes.tabPanle}>
                     Item Four
                 </TabPanel>
-                <TabPanel value={value} index={4}>
+                <TabPanel value={value} index={4} className={classes.tabPanle}>
                     Item Five
                 </TabPanel>
             </div>
