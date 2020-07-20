@@ -1,37 +1,10 @@
 import React from 'react';
-import {
-    makeStyles,
-    Avatar,
-    Grid,
-    TextField,
-    MenuItem,
-    Select,
-} from '@material-ui/core';
+import { Avatar, Grid, TextField, MenuItem, Select } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-        justifyContent: 'center',
-    },
-    large: {
-        width: theme.spacing(7),
-        height: theme.spacing(7),
-    },
-    margin: {
-        marginTop: theme.spacing(2),
-    },
-    width: { width: '75%' },
-    center: {
-        display: 'flex',
-        justifyContent: 'center',
-    },
-}));
+import useStyles from './style';
 
 const PersonalInfo = (props) => {
-    const classes = useStyles();
+    const classes = useStyles;
 
     const [gender, setGender] = React.useState('');
 
