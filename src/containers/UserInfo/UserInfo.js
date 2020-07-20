@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ChangePassword from './ChangePassword/ChangePassword';
 import PersonalInfo from './PersonalInfo/PersonalInfo';
 import Header from '../../components/Header/Header';
+import TicketInfo from './TicketInfo/TicketInfo';
 
 import { makeStyles, Tabs, Tab, Typography, Box } from '@material-ui/core';
 
@@ -94,7 +95,7 @@ function UserInfo() {
                     <ChangePassword />
                 </TabPanel>
                 <TabPanel value={value} index={2} className={classes.tabPanle}>
-                    Item Three
+                    <TicketInfo />
                 </TabPanel>
                 <TabPanel value={value} index={3} className={classes.tabPanle}>
                     Item Four
