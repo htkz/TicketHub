@@ -1,40 +1,18 @@
 import React from 'react';
 import clsx from 'clsx';
-
 import {
     Button,
     Input,
-    makeStyles,
     IconButton,
     InputLabel,
     InputAdornment,
     FormControl,
+    Grid,
 } from '@material-ui/core';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'block',
-        flewWrap: 'wrap',
-    },
-    margin: {
-        margin: theme.spacing(1),
-    },
-    withoutLabel: {
-        marginTop: theme.spacing(3),
-    },
-    passwordInput: {
-        width: '400px',
-    },
-    center: {
-        display: 'flex',
-        justifyContent: 'center',
-    },
-    button: {
-        marginTop: '10px',
-    },
-}));
+import useStyles from './style.css';
 
 const ChangePassword = (props) => {
     const classes = useStyles();
@@ -59,7 +37,7 @@ const ChangePassword = (props) => {
 
     return (
         <form className={classes.root}>
-            <div className={classes.center}>
+            <Grid className={classes.center}>
                 <FormControl
                     className={clsx(
                         classes.margin,
@@ -93,8 +71,8 @@ const ChangePassword = (props) => {
                         }
                     />
                 </FormControl>
-            </div>
-            <div className={classes.center}>
+            </Grid>
+            <Grid className={classes.center}>
                 <FormControl
                     className={clsx(
                         classes.margin,
@@ -128,8 +106,8 @@ const ChangePassword = (props) => {
                         }
                     />
                 </FormControl>
-            </div>
-            <div className={classes.center}>
+            </Grid>
+            <Grid className={classes.center}>
                 <FormControl
                     className={clsx(
                         classes.margin,
@@ -163,12 +141,12 @@ const ChangePassword = (props) => {
                         }
                     />
                 </FormControl>
-            </div>
-            <div className={clsx(classes.center, classes.button)}>
+            </Grid>
+            <Grid className={clsx(classes.center, classes.button)}>
                 <Button variant='contained' color='primary' disabled>
                     Change Password
                 </Button>
-            </div>
+            </Grid>
         </form>
     );
 };
