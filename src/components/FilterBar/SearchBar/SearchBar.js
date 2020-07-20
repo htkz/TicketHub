@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
     inputRoot: {
         color: 'inherit',
+        width: '100%',
     },
     inputInput: {
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
