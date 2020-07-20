@@ -1,10 +1,10 @@
 import React from 'react';
 import { Avatar, Grid, TextField, MenuItem, Select } from '@material-ui/core';
 
-import useStyles from './style';
+import useStyles from './style.css';
 
 const PersonalInfo = (props) => {
-    const classes = useStyles;
+    const classes = useStyles();
 
     const [gender, setGender] = React.useState('');
 
