@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import TicketBar from './TicketBar/TicketBar';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './style.css';
-
-const classes = useStyles();
+import { withStyles } from '@material-ui/core/styles';
 
 class TicketInfo extends Component {
     state = {
@@ -30,7 +29,7 @@ class TicketInfo extends Component {
     };
 
     render() {
-        //const classes = useStyles();
+        const { classes } = this.props;
         return (
             <Grid className={classes.root}>
                 <h1>User Tickets</h1>
@@ -46,4 +45,4 @@ class TicketInfo extends Component {
     }
 }
 
-export default TicketInfo;
+export default withStyles(useStyles)(TicketInfo);
