@@ -30,17 +30,25 @@ class TicketInfo extends Component {
 
     render() {
         const { classes } = this.props;
+
+        const allTickets = this.state.ticket.map((ticket) => (
+            <TicketBar
+                key={ticket._id}
+                placeName={ticket.placeName}
+                description={ticket.description}
+                effectDate={ticket.effectDate}
+                orderedDate={ticket.orderedDate}
+                price={ticket.price}
+            />
+        ));
+
         return (
-            <Grid className={classes.root}>
-                <h1>User Tickets</h1>
-                <TicketBar
-                    placeName={this.state.ticket[0].placeName}
-                    description={this.state.ticket[0].description}
-                    effectDate={this.state.ticket[0].effectDate}
-                    orderedDate={this.state.ticket[0].orderedDate}
-                    price={this.state.ticket[0].price}
-                ></TicketBar>
-            </Grid>
+            <React.Fragment>
+                <Grid>
+                    <h1>User Tickets</h1>
+                </Grid>
+                <Grid className={classes.root}>{allTickets}</Grid>
+            </React.Fragment>
         );
     }
 }

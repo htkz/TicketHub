@@ -6,7 +6,7 @@ import useStyles from './TicketBar.css';
 const TicketBar = (props) => {
     const classes = useStyles();
 
-    return <Grid className={classes.block}>111</Grid>;
+    return <Grid className={classes.block}>{props.placeName}</Grid>;
 };
 
 export default TicketBar;

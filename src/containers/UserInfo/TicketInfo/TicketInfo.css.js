@@ -1,9 +1,10 @@
 const useStyles = (theme) => ({
     root: {
-        height: '100vh',
+        maxHeight: '80vh',
         width: '100%',
         border: '1px solid red',
         margin: theme.spacing(1),
+        overflow: 'scroll',
     },
 });
 
