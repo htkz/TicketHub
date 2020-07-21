@@ -43,6 +43,18 @@ export default function MediaCard(props) {
                     >
                         Tickets: {props.place.remainNum}
                     </Typography>
+                    <Typography
+                        variant='body2'
+                        color='textSecondary'
+                        component='span'
+                    ></Typography>
+                    {props.place.category.map((category) => {
+                        return (
+                            <button disabled className={classes.category}>
+                                {category}
+                            </button>
+                        );
+                    })}
                 </CardContent>
             </CardActionArea>
         </Card>

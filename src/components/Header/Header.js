@@ -42,7 +42,7 @@ const Header = (props) => {
 
     return (
         <div className={classes.root}>
-            <AppBar position='static' color='transparent'>
+            <AppBar position='static' color='transparent' className={classes.appBar}>
                 <Toolbar>
                     <Typography variant='h6' className={classes.title}>
                         TicketHub
