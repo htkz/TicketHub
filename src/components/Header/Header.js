@@ -16,7 +16,9 @@ const Header = (props) => {
                 <Typography variant='button' className={classes.userName}>
                     Visitor
                 </Typography>
-                <Button variant='outlined' className={classes.button}>Login</Button>
+                <Button variant='outlined' className={classes.button}>
+                    Login
+                </Button>
             </React.Fragment>
         );
     }

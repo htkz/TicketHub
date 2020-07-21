@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         display: 'flex',
         width: '60%',
-        height: 'maxHeight',
+        height: '900px',
         margin: '10px auto',
     },
     tabs: {
@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     },
     tabPanle: {
         width: '100%',
+    },
+    fix: {
+        position: 'fixed',
     },
 }));
 
