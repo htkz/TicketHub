@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
@@ -8,15 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import SettingsIcon from '@material-ui/icons/Settings';
 import { IconButton } from '@material-ui/core';
-
-const useStyles = makeStyles({
-    list: {
-        width: 250,
-    },
-    fullList: {
-        width: 'auto',
-    },
-});
+import useStyles from './Drawer.css';
 
 export default function SwipeableTemporaryDrawer() {
     const classes = useStyles();
@@ -31,7 +22,7 @@ export default function SwipeableTemporaryDrawer() {
             className={clsx(classes.list, {
                 [classes.fullList]: anchor === 'top' || anchor === 'bottom',
             })}
-            role='presentation'
+            role="presentation"
             onClick={toggleDrawer(anchor, false)}
         >
             <List>
