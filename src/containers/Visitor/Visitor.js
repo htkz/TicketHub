@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import FilterBar from '../../components/FilterBar/FilterBar';
 import Cards from './Cards/Cards';
 
@@ -117,6 +118,7 @@ class Visitor extends Component {
                 <Header isVisitor />
                 <FilterBar />
                 <Cards places={this.state.places} />
+                <Footer />
             </React.Fragment>
         );
     }
