@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 import ChangePassword from './ChangePassword/ChangePassword';
 import PersonalInfo from './PersonalInfo/PersonalInfo';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import TicketInfo from './TicketInfo/TicketInfo';
 
-import { makeStyles, Tabs, Tab, Typography, Box } from '@material-ui/core';
+import { Tabs, Tab, Typography, Box } from '@material-ui/core';
+import useStyles from './UserInfo.css';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -40,25 +42,6 @@ function a11yProps(index) {
         'aria-controls': `vertical-tabpanel-${index}`,
     };
 }
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
-        display: 'flex',
-        width: '60%',
-        height: 'maxHeight',
-        margin: '10px auto',
-    },
-    tabs: {
-        borderRight: `1px solid ${theme.palette.divider}`,
-        margin: '15px',
-        width: '35%',
-    },
-    tabPanle: {
-        width: '100%',
-    },
-}));
 
 function UserInfo() {
     const classes = useStyles();
@@ -103,6 +86,9 @@ function UserInfo() {
                 <TabPanel value={value} index={4} className={classes.tabPanle}>
                     Item Five
                 </TabPanel>
+            </div>
+            <div>
+                <Footer />
             </div>
         </React.Fragment>
     );
