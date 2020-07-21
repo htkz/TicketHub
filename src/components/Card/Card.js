@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
     root: {
         width: 345,
-        margin: theme.spacing(2),
+        margin: theme.spacing(0.5),
     },
     description: {
         marginBottom: theme.spacing(2),
@@ -17,6 +17,15 @@ const useStyles = makeStyles((theme) => ({
     },
     media: {
         height: 200,
+    },
+    category: {
+        marginRight: theme.spacing(0.25),
+        cursor: 'pointer',
+        color: 'white',
+        backgroundColor: '#008295',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        padding: '4px 8px',
     },
 }));
 
@@ -57,6 +66,18 @@ export default function MediaCard(props) {
                     >
                         Tickets: {props.place.remainNum}
                     </Typography>
+                    <Typography
+                        variant='body2'
+                        color='textSecondary'
+                        component='span'
+                    ></Typography>
+                    {props.place.category.map((category) => {
+                        return (
+                            <button disabled className={classes.category}>
+                                {category}
+                            </button>
+                        );
+                    })}
                 </CardContent>
             </CardActionArea>
         </Card>

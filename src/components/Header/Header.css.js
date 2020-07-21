@@ -3,8 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: '#212529',
+        backgroundColor: '#343a40',
         color: 'white',
+    },
+    appBar: {
+        padding: theme.spacing(0, 10),
     },
     userName: {
         marginRight: theme.spacing(1),
