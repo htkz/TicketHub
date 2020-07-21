@@ -12,7 +12,7 @@ import {
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
-import useStyles from './style.css';
+import useStyles from './ChangePassword.css';
 
 const ChangePassword = (props) => {
     const classes = useStyles();

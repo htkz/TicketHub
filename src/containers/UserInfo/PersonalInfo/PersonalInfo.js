@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, Grid, TextField, MenuItem, Select } from '@material-ui/core';
 
-import useStyles from './style.css';
+import useStyles from './PersonalInfo.css';
 
 const PersonalInfo = (props) => {
     const classes = useStyles();
